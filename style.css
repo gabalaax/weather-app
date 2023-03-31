@@ -1,1 +1,158 @@
+*{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                  }
+                     html{
+                      height: 100%;
+                     }
+                         
+                          body{
+                                      padding: 1.2rem 0rem;
+                                      font-family: 'Roboto', sans-serif;
+                                      text-transform: capitalize;
+                                      background-color: #333333;
+                                      height: 100vh;
+                                  }
+                  
+                          
+                             .top{
+                                  display: flex;
+                                  justify-content: space-around;
+                                  align-items: center;
+                             }     
+                  
+                             .top h1{
+                                color: #fff;
+                                font-family: 'Orbitron', sans-serif;
+                                padding: 5px 0;
+                  
+                             }
+                  
+                            #search-input{
+                               font-size: 1.2rem;
+                               padding: 5px 10px;
+                               outline: none;
+                               border: none;
+                               border-radius: 1rem;
+                               background: aliceblue;
+                               margin-bottom: 1rem;
+                           }
+                  
+                  
+                  
+                  
+                           #search-btn{
+                                      background: none;
+                                      padding: 5px 20px;
+                                      color: #fff;
+                                      outline: none;
+                                      background: #4c9ef5;
+                                      font-size: 17px;
+                                      border-radius: 15px;
+                                      cursor: pointer;
+                                      border: none;
+                                      margin-bottom: 1rem;
+                  
+                                  }
+                  
+                  
+                                  .weather{
+                                      text-align: center;
+                                      color: aliceblue;
+                                  }
+                                  #city{
+                                      font-size: 30px;
+                                  }
+                                  .weather img{
+                                      width: 120px;
+                                      height: 120px;
+                                      border-radius: 50%;
+                                      background: rgba(240, 248, 255, 0.408);
+                                  }
+                                  #temperature{
+                                      font-size: 50px;
+                                      margin: 0;
+                                      margin-left: 30px;
+                                      margin-bottom: 10px;
+                                  }
+                                  .temp-box{
+                                      display: flex;
+                                      align-items: center;
+                                      justify-content: center;
+                                      margin: 30px 0;
+                                  }
+                                  #clouds{
+                                      font-size: 20px;
+                                      background: #99cd32c6;
+                                      padding: 2px 20px;
+                                      border-radius: 15px;
+                                      text-transform: capitalize;
+                                  }
+                                  .main{
+                                      display: grid;
+                                      grid-column-gap: 25px;
+                                      grid-template-columns: 1fr 5px 1fr;
+                                      align-items: center;
+                                      margin: 0 50px;
+                                      color: white;
+                                  }
+                  
+                                  .forecst-hours{
+                                      margin: 1.4rem;
+                                  }
+                  
+                                  .next{
+                                      display: flex;
+                                      justify-content: space-between;
+                                      align-items: center;
+                                      margin: 10px 0;
+                                  }
+                                  .next p,.next h3{
+                                      margin: 3px 0;
+                                  }
+                                  .forecst-days{
+                                      margin: 20px 50px;
+                                      color: #fff;
+                                  }
+                                  .week-forecast{
+                                      display: grid;
+                                      grid-template-columns: repeat(5,1fr);
+                  
+                                  }
+                                  .cast-title{
+                                      color: #fff;
+                                      background: #FDB813;
+                                      width: max-content;
+                                      padding: 5px 15px;
+                                      border-radius: 20px;
+                                      font-size: 18px;
+                                      margin: 1rem 0;
+                                      
+                                  }
+                                  .time,.date{
+                                      color: #FDB813;
+                                      font-weight: 600;
+                                  }
+                                  .desc{
+                                      color: #87CEEB;
+                                      text-transform: capitalize;
+                                  }
+                  
+                                  .divider1,.divider2{
+                                      background: #fff;
+                                      height: 200px;
+                                      border-radius: 5px;
+                                  }
+                                  .divider2{
+                                      height: 5px;
+                                      width: 30%;
+                                      margin: 0 auto;
+                                      margin-bottom: 1rem;
+                                  }
+                  
+                                  .dayF p{
+                                      padding: .8rem;
+                                  }
+                                  
 
