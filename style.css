@@ -156,3 +156,95 @@
                                   }
                                   
 
+
+
+                                  
+                                  @media screen and (max-width: 420px) {
+                                    .top {
+                                      flex-direction: column;
+                                      align-items: center;
+                                    }
+                                    #search-input {
+                                      margin: 10px 40px;
+                                      width: 80%;
+                                    }
+                                    #search-btn{
+                                      width: 80%;
+                                      margin: 10px 40px;
+                                    }
+                                    .main{
+                                      display: grid;
+                                      grid-template-columns:  1fr;
+                                      grid-column-gap: 25px;
+                                      align-items: center;
+                                    }
+
+                                    .weather{
+                                      margin: 20px 0;
+                                    }
+
+                                    .divider1,.divider2{
+                                      display: none;
+                                    }
+                                  }
+
+                                .week-forecast{
+                                    display:flex;
+                                    align-items: center;
+                                    flex-direction: column-reverse;
+                
+                                }
+                               
+
+                                .forecst-days{
+                                 padding-right: 3.5rem;
+                                }
+
+
+                                .dayF{
+                                    
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    margin: 10px 0;
+                                }
+
+                                .dayF p{
+                                    font-size: .8rem;
+                                }
+
+                                  @media screen and (max-width: 640px){
+                                    .top {
+                                      flex-direction: column;
+                                      align-items: center;
+                                    }
+                                    #search-input {
+                                      margin: 10px 40px;
+                                      width: 80%;
+                                    }
+                                    #search-btn{
+                                      width: 80%;
+                                      margin: 10px 40px;
+                                    }
+                                  }
+                                  @media screen and (max-width: 820px){
+                                    .main{
+                                      display: grid;
+                                      grid-template-columns:  1fr;
+                                      grid-column-gap: 25px;
+                                      align-items: center;
+                                    }
+                                    .weather{
+                                      margin: 20px 0;
+                                    }
+                                    .forecst-hours{
+                                      margin-top: 20px;
+                                    }
+                                    .forecst-days{
+                                      width: 100%;
+                                      margin-top: 20px;
+                                    }
+                                    .divider1{
+                                      display: none;
+                                    }
+                                  }
