@@ -188,30 +188,7 @@
                                     }
                                   }
 
-                                .week-forecast{
-                                    display:flex;
-                                    align-items: center;
-                                    flex-direction: column-reverse;
-                
-                                }
-                               
-
-                                .forecst-days{
-                                 padding-right: 3.5rem;
-                                }
-
-
-                                .dayF{
-                                    
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    margin: 10px 0;
-                                }
-
-                                .dayF p{
-                                    font-size: .8rem;
-                                }
+                              
 
                                   @media screen and (max-width: 640px){
                                     .top {
