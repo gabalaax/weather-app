@@ -23,7 +23,7 @@ function weatherReport(data){
     }).then((forecast) => {
         console.log(forecast);
         hourF(forecast);
-
+        dayforcast(forecast)
         document.getElementById ("city").innerText=data.name+" , "+data.sys.country
         document.getElementById("temperature").innerText = Math.floor(data.main.temp - 273) +" °C "
         document.getElementById("clouds").innerText=data.weather[0].description
@@ -64,4 +64,31 @@ function hourF(forecast){
 
     }
 
+}
+
+
+function dayforcast(forecast){
+document.querySelector(".week-forecast").textContent= " "
+
+for(let i = 0 ; i < forecast.list.length; i+=8){
+    console.log(forecast.list[i])
+
+    let div = document.createElement("div")
+    div.setAttribute("class", "dayF")
+    let day = document.createElement("p")
+    day.setAttribute("class","date" )
+    day.textContent = new Date(forecast.list[i].dt*1000).toDateString(undefined, "Burnsville/US")
+    div.appendChild(day)
+
+    let tempt = document.createElement("p")
+    tempt.textContent = Math.floor(forecast.list[i].main.temp_max-273) + "°C" + " / " + Math.floor(forecast.list[i].main.temp_max-273) + "°C"
+    div.appendChild(tempt)
+    
+    
+    let desc = document.createElement("p")
+    desc.setAttribute("class", "description")
+    desc.textContent= forecast.list[i].weather[0].description
+    div.appendChild(desc)
+    document.querySelector(".week-forecast").appendChild(div)
+}
 }

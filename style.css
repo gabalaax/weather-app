@@ -117,7 +117,7 @@
                                   }
                                   .week-forecast{
                                       display: grid;
-                                      grid-template-columns: repeat(4,1fr);
+                                      grid-template-columns: repeat(5,1fr);
                   
                                   }
                                   .cast-title{
@@ -134,7 +134,7 @@
                                       color: #FDB813;
                                       font-weight: 600;
                                   }
-                                  .desc{
+                                  .desc .description{
                                       color: #87CEEB;
                                       text-transform: capitalize;
                                   }
