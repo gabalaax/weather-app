@@ -22,6 +22,7 @@ function weatherReport(data){
         return res.json()
     }).then((forecast) => {
         console.log(forecast);
+        hourF(forecast);
 
         document.getElementById ("city").innerText=data.name+" , "+data.sys.country
         document.getElementById("temperature").innerText = Math.floor(data.main.temp - 273) +" °C "
@@ -32,4 +33,35 @@ function weatherReport(data){
 
 
     })
+}
+
+function hourF(forecast){
+    document.querySelector(".templist").textContent=" "
+    for(let i=0 ;i<5; i++){
+        let date = new Date(forecast.list[i].dt*1000)
+        let hourD=document.createElement("div")
+        hourD.setAttribute("class" ,"next")
+
+        let div=document.createElement("div")
+    
+        let time=document.createElement("p")
+        time.setAttribute("class","time")
+        time.textContent=(date.toLocaleTimeString(undefined, "Somalia/Mogadishu")).replace(":00" ," ")
+        let temp=document.createElement("p")
+        temp.textContent=Math.floor(forecast.list[i].main.temp_max-273) + "°C" + " / " + Math.floor(forecast.list[i].main.temp_max-273) + "°C"
+        
+        div.appendChild(time)
+        div.appendChild(temp)
+        
+        let desc=document.createElement("p")
+        desc.setAttribute("class", "desc")
+        desc.textContent= forecast.list[i].weather[0].description
+        
+        hourD.appendChild(div)
+        hourD.appendChild(desc)
+
+        document.querySelector(".templist").appendChild(hourD)
+
+    }
+
 }
