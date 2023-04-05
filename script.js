@@ -16,6 +16,24 @@ if(navigator.geolocation){
     })
 }})
 
+document.querySelector('#search-btn').addEventListener('click', ()=>{
+    let boos = document.querySelector('#search-input').value
+    console.log(boos);
+  let urlSearch = `https://api.openweathermap.org/data/2.5/weather?q=${boos}&appid=${apikey}`
+
+  fetch(urlSearch).then(responsive => {
+    return responsive.json()
+  }).then((data) =>{
+    console.log(data);
+    weatherReport(data)
+  })
+
+  document.querySelector('#search-input').value ;' '
+
+})
+
+
+
 function weatherReport(data){
     const urlCst = `https://api.openweathermap.org/data/2.5/forecast?q=${data.name}&` + `appid=${apikey}`
     fetch(urlCst).then(res => {
@@ -92,3 +110,5 @@ for(let i = 0 ; i < forecast.list.length; i+=8){
     document.querySelector(".week-forecast").appendChild(div)
 }
 }
+
+
