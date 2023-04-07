@@ -188,7 +188,13 @@
                                     }
                                   }
 
-                              
+                              @media screen and (max-width: 492px) {
+                                
+                                .dayF p{
+                                  font-size: .602rem;
+                                  font-weight: 600;
+                                }
+                              }
 
                                   @media screen and (max-width: 640px){
                                     .top {
@@ -225,3 +231,110 @@
                                       display: none;
                                     }
                                   }
+
+
+
+                                
+                                .body{
+                                    background-color: #05f7af;
+                                }
+                                
+                                .main-container{
+                                    text-align: center;
+                                    margin: 3rem  0;
+                                }
+                                
+                                .main-container h1{
+                                    text-align: center;
+                                    padding: 2rem 0;
+                                    color: #000;
+                                    font-size: 2.4rem;
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    font-family:Arial, Helvetica, sans-serif;
+                                }
+                                
+                                 .btn{
+                                    text-decoration: none;
+                                    background-color: #f26805;
+                                    padding: .8rem;
+                                    color: #fff;
+                                    font-size: 1.2rem;
+                                    cursor: pointer;
+                                    border-radius: .5rem;
+                                
+                                }
+                              
+                                
+                                .card-countainer{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                     padding: 1.5rem;
+                                     gap: 1rem;
+                                     flex-wrap: wrap;
+                                }
+                                
+                                .img{
+                                    border-radius: .8rem;
+                                    margin-top: 1.4rem;
+                                    align-items: center;
+                                   width: 80%;
+                                   height: 300px; 
+                                }
+                                /* 
+                                .faiza{
+                                    width: 100%;
+                                } */
+                                
+                                .card-box{
+                                    background-color: #000;
+                                    border-radius: .4rem;
+                                    flex-basis: 31%;
+                                   
+                                }
+                                
+                                .card-box h3{
+                                    color: #fff;
+                                    font-size: 1.2rem;
+                                    font-weight: 600;
+                                    padding-top: .8rem;
+                                }
+                                
+                                .card-box p{
+                                    text-align: justify;
+                                    padding: 1rem 1.5rem;
+                                    font-size: .8rem;
+                                    line-height: 1.5;
+                                    color: #fff;
+                                     
+                                }
+                                
+                                .card-box p span{
+                                    color: #f26805;
+                                }
+                                
+                                .card-box p a{
+                                    text-decoration: none;
+                                    color: #2aefef;
+                                } 
+                                
+                                
+                           .home-btn{
+                             text-align: center;
+                          padding: 1.2rem 0;
+                            margin-bottom: 1rem;
+                         }       
+                                
+                          .home-btn a{
+                            text-decoration: none;
+                            font-size: 1.3rem;
+                            color: #fff;
+                            font-weight: 600;
+                            background: #f26805;
+                            padding: .8rem;
+                            border-radius: .5rem;
+
+                          }      
+                                
+                
