@@ -338,3 +338,46 @@
                           }      
                                 
                 
+                          @media (min-width: 480px ) and (max-width: 768px){          
+                            .img{
+                              width: 80%;
+                              height: 200px;
+                              align-items: center;
+                              
+                            }
+                            .card-countainer{
+                              display: flex;
+                              align-items: center;
+                              justify-content: space-around;
+                              gap: 1rem;
+                              flex-wrap: wrap;
+                            }
+                            .card-box{
+                              flex-basis: 42%; 
+                            }
+                            .card-box p{
+                              text-align: justify;
+                              font-size: .612rem;
+                              line-height: 1.4;
+                            }
+                            .card-box h3{   
+                              font-size: 1rem;
+                              font-weight: 600;
+                            }
+                            .hani{
+                              width: 80%;
+                              
+                            }
+                          }
+                          @media (min-width: 320px ) and (max-width: 480px){
+                            .card-countainer{
+                              flex-direction: column;
+                            }
+                            .main-container h1{
+                              font-size: 1.5rem;
+                          }
+                          .hani{
+                            width: 100%;
+                            
+                          }
+                          }
